@@ -10,6 +10,7 @@ RUN pip install --upgrade pip && \
       matplotlib \
       seaborn \
       scikit-learn \
+      plotly \
 
 # Install system packages
 
