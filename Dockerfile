@@ -11,6 +11,7 @@ RUN pip install --upgrade pip && \
       seaborn \
       scikit-learn \
       plotly \
+      jupyterlab \
 
 # Install system packages
 
