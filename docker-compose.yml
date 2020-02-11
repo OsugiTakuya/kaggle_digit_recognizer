@@ -1,0 +1,11 @@
+version: '3'
+services:
+    tensorflow:
+        container_name: kaggle_digit
+        build: .
+        image: tensorflow-keras-python3:latest
+        volumes:
+            - /home/chopprin/kaggle/digit_recognition/:/tf
+        command: jupyter lab --port=8888 --ip=0.0.0.0 --allow-root
+        ports:
+            - 8888:8888

@@ -13,6 +13,7 @@ RUN pip install --upgrade pip && \
       plotly \
       jupyterlab \
 
+RUN jupyter labextension install @jupyterlab/toc
 # Install system packages
 
 #RUN apt-get update && apt-get install -y --no-install-recommends \
