@@ -3,9 +3,15 @@ services:
     tensorflow:
         container_name: kaggle_digit
         build: .
-        image: tensorflow-keras-python3:latest
+        image: tensorflow-keras-python3-opencv:latest
         volumes:
             - /home/chopprin/kaggle/digit_recognition/:/tf
-        command: jupyter lab --port=8888 --ip=0.0.0.0 --allow-root
+
+        # commandは実行時のコマンドを指定．
+        # bash -c " && "を使う事によって複数コマンド実行出来る．
+        command: >
+            bash -c "echo Using compose-file made on 2020/02/22
+            && jupyter lab --port=8888 --ip=0.0.0.0 --allow-root
+            && jupyter notebook list"
         ports:
             - 8888:8888
