@@ -35,7 +35,8 @@ RUN pip install --upgrade pip && \
       scikit-learn \
       plotly \
       jupyterlab \
-      opencv-python
+      opencv-python \ 
+      kaggle
 
 RUN jupyter labextension install @jupyterlab/toc
 # Install system packages
