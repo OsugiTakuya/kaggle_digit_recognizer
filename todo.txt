@@ -1,0 +1,5 @@
+・Kerasの(None, None, 3)で入力画像サイズに可変で対応可能
+・Cifarの画像サイズは32pix、Imaegnetは224pix
+・途中の結果を得たいだけなら、modelのoutputに設定する事は可能（　https://qiita.com/sasayabaku/items/75496bafff597fd5fe79　）
+・モデルのレイヤーに名前を付ける事は可能
+・1*1conv の方が全結合層にと違って入力画像サイズにモデルが可変で対応出来る。
